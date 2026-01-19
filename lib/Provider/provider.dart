@@ -67,6 +67,14 @@ String? BookingName(String? value){
   }return null;
 }
 
+String? DateValidate(String? value){
+  if (value == null || value.isEmpty) {
+    return "Date is required";
+  }
+  return null;
+
+}
+
 //Booking location validation
 String? LocationValidate(String? value){
   if (value == null || value.isEmpty) {

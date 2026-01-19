@@ -59,13 +59,13 @@ class _BookingFormPageState extends State<BookingFormPage> {
               CustomTextField(
                 label: "Start Date",
                 controller: StartDate,
-                validator: data.LocationValidate,
+                validator: data.DateValidate,
               ),
               const SizedBox(height: 80),
               CustomTextField(
                 label: "End Date",
                 controller: Enddate,
-                validator: data.LocationValidate,
+                validator: data.DateValidate,
               ),
               const SizedBox(height: 80),
 

@@ -63,6 +63,15 @@ flutter:
       - Assets/Images/
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
+# Icon Configuration Section
+
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: false
+  image_path: "Assets/Images/img_4.png"
+  adaptive_icon_background: "#3c3f41" # Matches your logo grey
+
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
