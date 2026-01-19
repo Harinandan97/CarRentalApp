@@ -7,9 +7,6 @@ import '../Custom_Widgets/CustomElevetedButton.dart';
 import '../Custom_Widgets/TextFormfield.dart';
 import '../Provider/provider.dart';
 
-void main(){
-  runApp(MaterialApp(home: Loginscreen(),debugShowCheckedModeBanner: false,));
-}
 class Loginscreen extends StatefulWidget {
 
 
@@ -30,7 +27,9 @@ class _LoginscreenState extends State<Loginscreen> {
 
     final data = context.watch<CarProvider>();
 
-    return Scaffold(resizeToAvoidBottomInset: true,
+    return Scaffold(
+        appBar: AppBar(automaticallyImplyLeading: false,),
+        resizeToAvoidBottomInset: true,
         body:
        SafeArea(child:  Container(color: Colors.white,child:
        Form(key:CarKey ,
@@ -78,12 +77,12 @@ class _LoginscreenState extends State<Loginscreen> {
              {
                if(CarKey.currentState!.validate()){
                  data.getUserName(email.text);
-                 print(email.text);
-                 Navigator.pushReplacement(context, MaterialPageRoute(builder: (_)=>home()));
+                 print(email.text.trim());
+                 Navigator.push(context, MaterialPageRoute(builder: (_)=>home()));
                }
 
              },) ,
-           ),SizedBox(height: 100,),
+           ),
          ],),
        ),))
 

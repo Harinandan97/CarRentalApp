@@ -16,3 +16,15 @@ class Car {
   });
 }
 
+
+class BookingData{
+  final String Sdate;
+  final String Edate;
+  final String personName;
+  final String Location;
+
+  BookingData({
+    required this.Edate,
+    required this.Sdate,
+    required this.personName,required this.Location});
+}

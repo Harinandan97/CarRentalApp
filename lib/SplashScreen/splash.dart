@@ -4,14 +4,6 @@ import 'package:flutter/material.dart';
 import '../../Authentication/LoginScreen.dart';
 
 
-void main() {
-  runApp(
-    MaterialApp(
-      home: WelcomeScreen(),
-      debugShowCheckedModeBanner: false,
-    ),
-  );
-}
 
 class WelcomeScreen extends StatefulWidget {
   const WelcomeScreen({super.key});
