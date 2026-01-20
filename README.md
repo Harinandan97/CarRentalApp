@@ -1,16 +1,70 @@
-# car_rental_app
+#  Car Rental Booking App (Flutter)
 
-A new Flutter project.
+A simple MVP-style **Car Rental Booking App** built using **Flutter** as part of a technical assignment.  
+The app demonstrates basic navigation, state management, and clean project structure using mock data.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+##  Features
 
-A few resources to get you started if this is your first Flutter project:
+- Mock Login Screen (no backend)
+- List of available cars using mock data
+- Car detail screen with pricing and specifications
+- Booking form (Name, Date, Location)
+- Booking confirmation summary
+- Booking history
+- Clean and simple UI
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+##  Tech Stack
+
+- Flutter
+- Dart
+- Provider (State Management)
+- Material UI
+
+---
+
+##  Project Structure
+
+lib/
+│── Authentication/
+│── BottomNavigationbar/
+│── Custom_Widgets/
+│── model/
+│── Provider/
+│── SplashScreen/
+│── view/
+│ ├── Booking/
+│ ├── BookingSummary/
+│ ├── List of cars and Details/
+│ ├── Profile/
+│── main.dart
+
+yaml
+Copy code
+
+---
+
+##  How to Run the App
+
+1. Clone the repository
+```bash
+git clone https://github.com/Harinandan97/CarRentalApp.git
+Navigate to the project folder
+
+bash
+Copy code
+cd CarRentalApp
+Install dependencies
+
+bash
+Copy code
+flutter pub get
+Run the app
+
+bash
+Copy code
+flutter run
+ 
