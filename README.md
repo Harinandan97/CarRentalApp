@@ -11,7 +11,6 @@ The app demonstrates basic navigation, state management, and clean project struc
 - List of available cars using mock data
 - Car detail screen with pricing and specifications
 - Booking form (Name, Date, Location)
-- Booking confirmation summary
 - Booking history
 - Clean and simple UI
 
