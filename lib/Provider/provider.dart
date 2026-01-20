@@ -18,25 +18,11 @@ class CarProvider extends ChangeNotifier{
   dynamic CarDetails='';
 
 
-  //bookingData
-  String personName="";
-  String Locations="";
-  String Fdate="";
-  String LD="";
-
+//Booking history
   List<BookingData>booking=[];
 
 
 
-  //booking summary
-  void summary(String Name,String location,String date,String l){
-    personName=Name;
-    Locations=location;
-    Fdate=date;
-    LD=l;
-    notifyListeners();
-
-  }
 
 
   //single car info
@@ -192,15 +178,17 @@ String? LocationValidate(String? value){
 
 
   //List of booking data
-  void addBookingData() {
+  void addBookingData(String Name,String location,String date,String l) {
     booking.add(
       BookingData(
-        personName: personName,
-        Location: Locations, Edate: Fdate, Sdate: LD,
+        personName: Name,
+        Location: location, Edate: date, Sdate: l,
       ),
     );
     notifyListeners();
   }
+
+
 
   //delete Booking
   void deleteBooking(int index) {

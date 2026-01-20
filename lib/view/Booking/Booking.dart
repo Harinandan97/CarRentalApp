@@ -72,7 +72,7 @@ class _BookingFormPageState extends State<BookingFormPage> {
 
 
 
-              const SizedBox(height: 120),
+              const SizedBox(height: 100),
 
 
               CustomButton(
@@ -80,8 +80,7 @@ class _BookingFormPageState extends State<BookingFormPage> {
                 OnPressed: () {
                   if (_formKey.currentState!.validate()) {
                     Navigator.pushReplacement(context, MaterialPageRoute(builder: (_)=>home()));
-                    data.summary(_nameController.text, _locationController.text,StartDate.text,Enddate.text);
-                    data.addBookingData();
+                    data.addBookingData(_nameController.text, _locationController.text,StartDate.text,Enddate.text);
                     print(_nameController.text);
 
 
