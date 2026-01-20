@@ -118,7 +118,7 @@ class BookingSummaryPage extends StatelessWidget {
                             ),
                             const SizedBox(height: 4),
                             Text(
-                              details.Sdate,
+                              details.StartDate,
                               style: const TextStyle(
                                   fontSize: 15,
                                   fontWeight: FontWeight.w600),
@@ -137,7 +137,7 @@ class BookingSummaryPage extends StatelessWidget {
                             ),
                             const SizedBox(height: 4),
                             Text(
-                              details.Edate,
+                              details.EndDate,
                               style: const TextStyle(
                                   fontSize: 15,
                                   fontWeight: FontWeight.w600),

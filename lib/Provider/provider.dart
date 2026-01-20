@@ -178,11 +178,11 @@ String? LocationValidate(String? value){
 
 
   //List of booking data
-  void addBookingData(String Name,String location,String date,String l) {
+  void addBookingData(String Name,String location,String StartDate,String EndDate) {
     booking.add(
       BookingData(
         personName: Name,
-        Location: location, Edate: date, Sdate: l,
+        Location: location, StartDate: StartDate, EndDate: EndDate,
       ),
     );
     notifyListeners();
